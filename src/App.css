@@ -13,7 +13,7 @@
   }
 }
 
-.App-header {
+.App-header, .App-footer {
   background-color: #282c34;
   min-height: 10vh;
   display: flex;
@@ -22,8 +22,11 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  border-radius: 10% 10% 0% 0%;
 }
-
+.App-footer{
+  border-radius: 0 0 10% 10%;
+}
 .App-link {
   color: #61dafb;
 }

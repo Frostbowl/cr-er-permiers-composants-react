@@ -19,6 +19,10 @@ class Article extends React.Component{
   }
 }
 
+const Copyright = (props) => {
+  return <p>Application réalisée par &copy; {props.prenom}{props.nom}</p>
+};
+
 
 function App() {
   return (
@@ -37,6 +41,12 @@ function App() {
         <Article nom="Verou" prenom="Lea" tags="Web design, CSS secrets"
         src="lea" />
       </main>
+
+      <footer className='App-footer'>
+        
+        <Copyright prenom="Clément" nom="Masclet" />
+
+      </footer>
 
     </div>
   );
